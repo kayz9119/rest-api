@@ -2,7 +2,8 @@ var http = require('http')
 var express = require('express')
 var bodyPars = require('body-parser')
 
-var version = { "version": "1.0.0" }
+var version = { "version": "1.0.1" }
+var gameLink = {"link" : "google.com"}
 
 var app = express();
 
@@ -11,6 +12,10 @@ app.use(bodyPars.json())
 
 app.get('/api/version', (req, res) => {
     res.status(200).jsonp(version)
+})
+
+app.get('/api/gameLink', (req, res) => {
+    res.status(200).jsonp(gameLink)
 })
 
 app.get('/', (req, res) => {
