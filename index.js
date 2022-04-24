@@ -3,7 +3,7 @@ var express = require('express')
 var bodyPars = require('body-parser')
 
 var version = { "version": "1.0.1" }
-var gameLink = {"link" : "google.com"}
+var gameLink = {"link" : "https://download1651.mediafire.com/fx53gv4rbsgg/cnuolup7pyy83du/WarOfSea.zip"}
 
 var app = express();
 
