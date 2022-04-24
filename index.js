@@ -9,12 +9,8 @@ var app = express();
 app.use(bodyPars.urlencoded({extended: true}))
 app.use(bodyPars.json())
 
-app.post('/api/version', (req, res) => {
-    res.send(version)
-})
-
-app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+app.get('/api/version', (req, res) => {
+    res.status(200).jsonp(version)
 })
 
 app.listen(process.env.PORT || 3000, () => {
