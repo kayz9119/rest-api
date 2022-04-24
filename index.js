@@ -13,6 +13,10 @@ app.get('/api/version', (req, res) => {
     res.status(200).jsonp(version)
 })
 
+app.get('/', (req, res) => {
+    res.sendFile('index.html')
+})
+
 app.listen(process.env.PORT || 3000, () => {
     console.log(`${process.env.PORT}`)
 }) 
