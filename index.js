@@ -2,7 +2,7 @@ var http = require('http')
 var express = require('express')
 var bodyPars = require('body-parser')
 
-var version = { "version": "1.0.1" }
+var version = { "version": "1.0.0" }
 
 var app = express();
 
