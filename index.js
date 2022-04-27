@@ -2,8 +2,8 @@ var http = require('http')
 var express = require('express')
 var bodyPars = require('body-parser')
 
-var version = { "version": "1.1.0" }
-var gameLink = {"link" : "https://www.mediafire.com/file/cnuolup7pyy83du/WarOfSea.zip/file"}
+var version = { "version": "1.2.1" }
+var gameLink = {"link" : "https://www.mediafire.com/file/mosqkodf1bl9eqv/WarOfSea.zip/file"}
 
 var app = express();
 
